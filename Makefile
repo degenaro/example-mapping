@@ -4,7 +4,7 @@ ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 # Variables - Trestle Tooling
 REPO_URL := https://github.com/oscal-compass/compliance-trestle.git
 BRANCH   := v4.mapping.bob
-SRC_DIR  := compliance-trestle_src
+SRC_DIR  := /tmp/compliance-trestle_src
 VENV     := $(ROOT_DIR)/.venv
 BIN      := $(VENV)/bin
 PYTHON   := $(BIN)/python3
@@ -20,12 +20,16 @@ all: setup clone develop generate-csf-catalog generate-csf-mapping trestle-trans
 
 # 1. Unified Environment Setup
 setup:
-	@echo "==> Creating virtual environment..."
-	python3 -m venv $(VENV)
-	$(BIN)/pip install --upgrade pip setuptools wheel
-	$(BIN)/pip install pandas openpyxl
+	@if [ ! -d "$(VENV)" ]; then \
+		echo "==> Creating virtual environment..."; \
+		python3 -m venv $(VENV); \
+		$(BIN)/pip install --upgrade pip setuptools wheel; \
+		$(BIN)/pip install pandas openpyxl; \
+		echo "==> Venv initialized with pandas, openpyxl, and trestle base requirements."; \
+	else \
+		echo "==> Virtual environment already exists at $(VENV)"; \
+	fi
 	@mkdir -p $(OUTPUT_DIR)
-	@echo "==> Venv initialized with pandas, openpyxl, and trestle base requirements."
 
 # 2. Trestle Tooling Targets
 clone:
@@ -35,10 +39,14 @@ clone:
 	fi
 
 develop: setup
-	@echo "==> Installing trestle from source..."
-	$(BIN)/pip install -e ./$(SRC_DIR)
-	@echo "==> Running internal development setup..."
-	cd $(SRC_DIR) && PATH="$(BIN):$(PATH)" $(MAKE) develop
+	@if [ ! -f "$(BIN)/trestle" ]; then \
+		echo "==> Installing trestle from source..."; \
+		$(BIN)/pip install -e $(SRC_DIR); \
+		echo "==> Running internal development setup..."; \
+		cd $(SRC_DIR) && PATH="$(BIN):$(PATH)" $(MAKE) develop; \
+	else \
+		echo "==> Trestle already installed in virtual environment"; \
+	fi
 
 validate:
 	@echo "==> Validating Trestle workspace at $(ROOT_DIR)..."

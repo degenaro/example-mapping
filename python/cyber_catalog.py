@@ -10,25 +10,26 @@ INPUT_FILE = 'data/csf2.xlsx'
 OUTPUT_FILE = 'catalogs/NIST_CSF_v2.0/catalog.json'
 
 def clean_id(text):
-    """Converts text to OSCAL-compliant ID format.
+    """Converts text to OSCAL-compliant ID format, extracting only the abbreviation part.
     Examples:
-    - 'GOVERN (GV): ...' -> 'govern-gv'
-    - 'Organizational Context (GV.OC): ...' -> 'organizational-context-gv-oc'
-    - 'Roles, Responsibilities, and Authorities (GV.RR): ...' -> 'roles-responsibilities-and-authorities-gv-rr'
-    - 'GV.OC-01: ...' -> 'gv-oc-01'
+    - 'Organizational Context (GV.OC): ...' -> 'gv.oc'
+    - 'Roles, Responsibilities, and Authorities (GV.RR): ...' -> 'gv.rr'
+    - 'GV.OC-01: ...' -> 'gv.oc-01'
+    
+    Note: For top-level function groups, the abbreviation in parentheses (e.g., 'GV' from 'GOVERN (GV)')
+    is extracted directly and used as the ID.
     """
     if pd.isna(text): return ""
     # Take only the part before the colon
-    text = text.split(':')[0].strip().lower()
-    # Replace periods with hyphens
-    text = text.replace(".", "-")
-    # Remove parentheses, commas, and replace spaces with hyphens
-    text = text.replace("(", "").replace(")", "").replace(",", "").replace(" ", "-")
-    # Remove any double hyphens that might result
-    while "--" in text:
-        text = text.replace("--", "-")
-    # Remove leading/trailing hyphens
-    return text.strip("-")
+    text = text.split(':')[0].strip()
+    
+    # If there's an abbreviation in parentheses, extract it
+    if '(' in text and ')' in text:
+        abbrev = text.split('(')[1].split(')')[0].strip().lower()
+        return abbrev
+    
+    # Otherwise, just convert to lowercase (for subcategory IDs like "GV.OC-01")
+    return text.lower()
 
 def transform():
     if not os.path.exists(INPUT_FILE):
@@ -57,8 +58,16 @@ def transform():
     for _, row in df.iterrows():
         # 1. Functions -> Top Level Groups
         if pd.notna(row['Function']):
+            # Extract the abbreviation from parentheses (e.g., "GOVERN (GV)" -> "gv")
+            func_text = row['Function']
+            func_id = clean_id(func_text)
+            # If there's an abbreviation in parentheses, use it as the ID
+            if '(' in func_text and ')' in func_text:
+                abbrev = func_text.split('(')[1].split(')')[0].strip().lower()
+                func_id = abbrev
+            
             current_func = {
-                "id": clean_id(row['Function']),
+                "id": func_id,
                 "class": "function",
                 "title": row['Function'],
                 "groups": []
@@ -85,7 +94,7 @@ def transform():
                 "id": ctrl_id,
                 "title": parts[0].strip(),
                 "parts": [{
-                    "id": f"{ctrl_id}-smt",
+                    "id": f"{ctrl_id}_smt",
                     "name": "statement",
                     "prose": parts[1].strip() if len(parts) > 1 else ""
                 }]
@@ -94,7 +103,7 @@ def transform():
             # Implementation Examples
             if pd.notna(row['Implementation Examples']):
                 control["parts"].append({
-                    "id": f"{ctrl_id}-eg",
+                    "id": f"{ctrl_id}_eg",
                     "name": "example",
                     "prose": str(row['Implementation Examples'])
                 })

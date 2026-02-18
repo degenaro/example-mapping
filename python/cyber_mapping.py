@@ -35,7 +35,7 @@ def load_catalog_control_ids(catalog_path):
 def transform_csf_id(csf_id):
     """
     Transform CSF IDs to match catalog format.
-    Examples: 'GV.OC-01' -> 'gv-oc-01', 'DE.AE-02' -> 'de-ae-02'
+    Examples: 'GV.OC-01' -> 'gv.oc-01', 'DE.AE-02' -> 'de.ae-02'
     """
     if pd.isna(csf_id):
         return ""
@@ -43,8 +43,7 @@ def transform_csf_id(csf_id):
     # Convert to string, strip whitespace, and lowercase
     csf_id = str(csf_id).strip().lower()
     
-    # Replace periods with hyphens
-    csf_id = csf_id.replace(".", "-")
+    # Keep periods as-is (catalog uses dots in IDs)
     
     return csf_id
 
@@ -172,9 +171,9 @@ data_rows = pd.DataFrame({
     '$$Target_Resource': ["catalogs/NIST_SP-800-53_rev5/catalog.json"] * len(grouped),
     '$$Map_Source_ID_Ref_list': grouped[source_col].values,
     '$$Map_Target_ID_Ref_list': grouped[target_col].values,
-    '$$Map_Relationship': ["subset-of"] * len(grouped),
-    '$Map_Confidence_Score': ["90%"] * len(grouped),
-    '$Map_Coverage': ["90%"] * len(grouped)
+    '$$Map_Relationship': ["superset-of"] * len(grouped),
+    '$Map_Confidence_Score': ["100%"] * len(grouped),
+    '$Map_Coverage': [""] * len(grouped)
 })
 
 # Ensure the columns follow the template order exactly
