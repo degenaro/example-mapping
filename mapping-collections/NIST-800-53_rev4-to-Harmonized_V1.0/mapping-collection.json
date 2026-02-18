@@ -1,0 +1,74 @@
+{
+  "mapping-collection": {
+    "uuid": "a0000000-0000-4000-8000-000000000050",
+    "metadata": {
+      "title": "Mapping from NIST 800-53 rev4 to Harmonized Profile V1.0",
+      "last-modified": "2025-04-14T00:00:00.000+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2"
+    },
+    "provenance": {
+      "method": "semi-automated",
+      "matching-rationale": "semantic",
+      "status": "draft",
+      "confidence-score": {
+        "STRVALUE": "0.90"
+      },
+      "mapping-description": "This contains semantic mappings from NIST 800-53 v4 to Harmonized Profile V1.0."
+    },
+    "mappings": [
+      {
+        "uuid": "a0000000-0000-4000-8000-000000000060",
+        "source-resource": {
+          "type": "catalog",
+          "href": "catalogs/NIST_SP-800-53_rev4/catalog.json"
+        },
+        "target-resource": {
+          "type": "profile",
+          "href": "profiles/Harmonized_v1.0/profile.json"
+        },
+        "maps": [
+          {
+            "uuid": "9d06c3a4-8e87-44d2-bd24-580687c59a21",
+            "matching-rationale": "functional",
+            "confidence-score": {
+              "STRVALUE": "0.95"
+            },
+            "relationship": "equal-to",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "ac-1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "ac-1"
+              }
+            ]
+          },
+          {
+            "uuid": "e2a1943f-c0ae-4d39-ab58-41fcee000960",
+            "confidence-score": {
+              "STRVALUE": "0.99"
+            },
+            "relationship": "equal-to",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "ac-2"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "ac-2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

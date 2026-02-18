@@ -1,0 +1,4888 @@
+{
+  "mapping-collection": {
+    "uuid": "f82e6245-f8c6-46fb-9f2f-8f63a1cbd175",
+    "metadata": {
+      "title": "Mapping Collection CSF2",
+      "last-modified": "2026-02-18T12:50:00+00:00",
+      "version": "develop",
+      "oscal-version": "1.2.0"
+    },
+    "provenance": {
+      "method": "manual",
+      "matching-rationale": "semantic",
+      "status": "complete",
+      "mapping-description": "Mapping collection for Mapping Collection CSF2"
+    },
+    "mappings": [
+      {
+        "uuid": "691a4188-07d4-4038-8fd2-407280983aa8",
+        "source-resource": {
+          "type": "catalog",
+          "href": "catalogs/NIST_CSF_v2.0/catalog.json"
+        },
+        "target-resource": {
+          "type": "catalog",
+          "href": "catalogs/NIST_SP-800-53_rev5/catalog.json"
+        },
+        "maps": [
+          {
+            "uuid": "5e814deb-636c-4ee0-9713-314973aeae22",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "a77344ef-9a5b-4ed1-8f1c-abc08d16224b",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "29a4277e-3eb2-47d7-b7cf-26bf7c05ee10",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "68286370-9f8a-40fc-b061-432d87c0b631",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-15"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-10"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "212062d6-80fe-44d4-ab42-6a2e94dd61ae",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-10"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e64ca93f-005d-41a0-9287-81ef334674d2",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-ae-08"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "4fd7f0f0-df6a-472f-b436-2794d8569c84",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-cm-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "22c23ff1-1956-4e60-91cd-da32a4cdf1d0",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-cm-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-20"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "d0470c9f-61fd-45f4-9ceb-6182060c89a2",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-cm-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "b30eb7b1-e672-418c-80c7-39f53882cfe3",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-cm-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "67e8360d-e595-4950-9a13-781e6dfa35f6",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "de-cm-09"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-34"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-35"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "cea45ef6-d3c8-4523-83fd-48b99a7f227b",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-oc-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f2f64d90-32b2-4918-9a4a-e3298d6e1c1f",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-oc-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "99a6aa31-171f-4373-b27d-06d64a6280cf",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-oc-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f08b70bf-6c45-45d1-9ffa-5890d418815d",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-oc-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "01c0b411-9268-4813-b262-eed3621ea6c1",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-oc-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "bda0254f-df7e-4783-b629-14ed6e46089c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-ov-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "15b37df8-5ffd-4c03-af0e-f102c0d76c0f",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-ov-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "da2386c5-20cc-4f0b-8044-fea1129bf242",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-ov-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "4e585bb5-152c-4078-bd7d-45c0697adc16",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-po-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "d61c8b33-6d70-42de-8908-e3f8d8ec9f30",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-po-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ad59ef3a-68af-42ce-bc07-d2215e73e176",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "2b41bc1b-feb7-41ec-bc7d-e91e2bfca5a4",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "10ee7158-916a-479f-a419-bb73f9d28983",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "c3a88ea9-0fe8-473b-b6b3-b6e7685dc02c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "3cda9da8-67cf-438e-b718-434cb2efa484",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "5c573501-2925-4f99-b0f7-3098465426cf",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ca811395-e548-492b-9175-6ca5e51284c4",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rm-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "d1569b5f-50a7-42ac-a0fe-9a1bbf2bd7d9",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rr-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-29"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "85d868b2-202f-4536-95c0-082a543ab901",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rr-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-29"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f2a3beb7-06f2-4481-b4f7-9f31b8fe58c0",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rr-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "5d85de93-5d63-4aaa-9bba-fc02249c3b8a",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-rr-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "8579adf9-61ad-4334-a205-a4c1e410d39a",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "2ba523df-fb16-4e96-998b-c9bf3c2ee2a8",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "5e1ee141-356d-4206-9733-b63f1fa22cb9",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "22d59fc8-24b5-426d-bd21-fdcd4e76bf8c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "31de42a8-15f6-46e2-a091-5f9aa54f6245",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-10"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f6b01f38-dd5f-4163-b04b-b021899a261f",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ddbcba68-b40f-4cac-b2fa-f3011a2be388",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "cecdba15-9856-4216-bbd1-89a198783aec",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-08"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "86c985e3-6d63-4562-813b-9373132c2734",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-09"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f8bd5b6d-bc9b-42ed-8987-90708ff6e5cf",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "gv-sc-10"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "81bdc5e3-8346-4150-bdbd-02068c333308",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ba477606-3586-465a-83b7-e320293e187e",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "a98d035c-f199-47f6-ab69-2faeb42bbe21",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "99f2d713-e114-4133-8402-028a39672c82",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "5773f4f6-5033-4d50-97bf-f56721b73b9e",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e4bf6268-723f-4745-bc7b-037fa2daf974",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-12"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "79fb7449-edaa-467a-9d50-4c48bf34dea3",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-am-08"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-12"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f03b92e8-46fe-4786-9a95-2129d3d50384",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-im-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-17.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "1baf6070-8aa4-4bf8-b983-dbfbd8173c89",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-im-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "b2159ad2-bdfb-4a88-9bf6-6a7936de1015",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-im-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pt-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ba8ea2f4-6571-4b3b-b075-a8ad203de4b8",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-im-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "6dd745d6-7c82-400b-91db-019dce34f266",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "bb9cab3c-a02a-4e4b-beb1-56eb474dcfbe",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-15"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "2d962a28-24e0-4a6a-9be7-23a0dda3caec",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "7d9613e7-5c15-4727-85c9-42f1c34cd6f4",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "96720183-42bc-41db-b4a8-77877aaab27c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f8945cc0-4b9f-4f93-a9ff-df4576a725d5",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-30"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "3055baa2-7de7-48f7-b4d7-3bd032cb2ec6",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "12787600-4d13-4134-b957-6cbfd9701f79",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-08"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e1169ef4-4fb5-490f-8b7c-35f2afdcda35",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-09"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-17"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "b9b2d58d-2ae8-4f4a-904f-3471d1481af1",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "id-ra-10"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "95a868a9-4ca7-4f77-95d7-403009b2abb4",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-14"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "9fefdfb6-524b-4be3-908c-a52c53483939",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ia-12"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "dd599f2e-e555-410a-a7a1-75f0c983d2c5",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e373fa3c-493a-4d60-8083-fa3f2bd11a98",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ia-13"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "219a40f7-0bae-48d6-88e4-78c45c9a347e",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-13"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "10d68a53-ddb1-4f7d-a9ac-cc5a6e98a3fd",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-aa-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pe-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-19"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-20"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "2af9db40-7be6-421d-a188-74c98162b1c9",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-at-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "at-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "621e8dc5-b0fa-4681-8732-1470542d215b",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-at-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "at-3"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e9bd2cd8-0f08-456a-b84c-66c2ac0ab6b6",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ds-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-28"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-32"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-43"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "d8edee97-106c-4699-878a-220ff0d4ceca",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ds-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-16"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-40"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-43"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "3e5b9cc4-5bde-4170-a010-c3167700f205",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ds-10"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-32"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-40"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-43"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-16"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "c880c19c-7f67-499e-855b-99269e308f8c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ds-11"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e6e25d3c-c8b0-427f-8c26-230dfcc4bbcb",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ir-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "417f231f-4393-4d0b-bb92-99e8e158f5fc",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ir-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-14"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-15"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-23"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "218fc644-f3da-4e94-b464-e4471f16e32e",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ir-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-24"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-36"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-13"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "79ac9a91-6450-4f76-858c-c2ee57511b46",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ir-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "d43d82a4-2887-4725-8126-6dcfd44b26dd",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-11"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "b9d35f48-b2d6-4c17-929a-161fdf84bcc1",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-3.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-10.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "692229af-e013-4291-94be-e6cedda4526a",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-7.9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-10.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-3.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-49"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-51"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "28c6d6bc-702a-4f37-b007-30b302145f11",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15.13"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "33facad9-5d5f-46cc-b8c6-b54d522c1e08",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-7.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-34"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "02427175-1cfd-4f84-8ff8-b7e01a3c6214",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "pr-ps-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sa-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15.13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-17"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-24"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "be216a99-5747-42db-a4cb-f739e4943e1d",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-co-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ff1b5b8a-72fe-468d-ad45-0354b37b688a",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-co-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "88b0cc5f-3020-48d1-b587-32443e008f01",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "87ccd3e6-185b-4b3b-8820-a1823320d90c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "26e32da8-fa3d-41a3-8101-5d78d8be4b0b",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "0080aed1-39db-4ef0-ba9d-53a4794ee766",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "pm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "afe78644-c0fd-4f9f-85f9-552366099d0c",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "7cde4589-c88e-48fe-bafd-0e8141659dcf",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rc-rp-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "661268fc-27c2-4918-aab7-dabf3cead5b1",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-an-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "f454f6e1-d5f0-41b8-a458-c2e5e9d51914",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-an-06"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "30129665-af69-47a7-968d-781f915885e1",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-an-07"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "fb41b84f-6803-4a5a-a73f-aaf9b58e39e5",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-an-08"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "12a3d008-080c-4477-a543-3a317c720873",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-co-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "e44029b5-1ac8-4794-8405-02c1ab99cead",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-co-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "1f382ce1-8d4b-4ea7-bb83-9b4c77ffdd33",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-ma-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "c27b60b0-c63d-4ed8-9eb1-dd116ec2ed99",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-ma-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "ea6f16c3-0d10-4fec-ac94-2159ec3b8655",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-ma-03"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "4d120dac-9587-4aaf-8f8e-c0160935782e",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-ma-04"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "a644fe1e-3ebe-4ee5-b2ca-b4a28f7f8e5d",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-ma-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "2e7b3f88-2a22-4008-8e33-147e50fe111a",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-mi-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          },
+          {
+            "uuid": "69d819a2-76ed-48b5-9ce7-8bb9e3f8659b",
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "rs-mi-02"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              }
+            ],
+            "confidence-score": {
+              "percentage": 0.9
+            },
+            "coverage": {
+              "STRVALUE": 0.9
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

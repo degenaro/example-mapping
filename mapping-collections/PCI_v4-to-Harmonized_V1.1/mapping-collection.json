@@ -1,0 +1,113 @@
+{
+  "mapping-collection": {
+    "uuid": "a0000000-0000-4000-8000-000000000050",
+    "metadata": {
+      "title": "Mapping from PCI V4 to Harmonized Profile V1.1",
+      "last-modified": "2025-04-14T00:00:00.000+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.3"
+    },
+    "provenance": {
+      "method": "semi-automated",
+      "matching-rationale": "semantic",
+      "status": "draft",
+      "confidence-score": {
+        "STRVALUE": "0.90"
+      },
+      "mapping-description": "This contains semantic mappings from PCI v4 to Harmonized Profile V1.0."
+    },
+    "mappings": [
+      {
+        "uuid": "a0000000-0000-4000-8000-000000000060",
+        "source-resource": {
+          "type": "catalog",
+          "href": "catalogs/PCI/catalog.json"
+        },
+        "target-resource": {
+          "type": "profile",
+          "href": "profiles/Harmonized_v1.1/profile.json"
+        },
+        "maps": [
+          {
+            "uuid": "aab6076d-f825-4267-9c42-10bb9d49f5ea",
+            "matching-rationale": "functional",
+            "confidence-score": {
+              "STRVALUE": "0.95"
+            },
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "PCI-8.3.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "ac-1"
+              }
+            ]
+          },
+          {
+            "uuid": "9f810ccb-472a-48ee-968e-9f262aa54b29",
+            "confidence-score": {
+              "STRVALUE": "0.99"
+            },
+            "relationship": "subset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "PCI-8.3.2"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "ac-2"
+              }
+            ]
+          },
+          {
+            "uuid": "48a21fed-01d3-44f2-88d6-19cde9ed6b9e",
+            "matching-rationale": "functional",
+            "confidence-score": {
+              "STRVALUE": "0.95"
+            },
+            "relationship": "equal-to",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "PCI-8.4.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "PCI-8.4.1"
+              }
+            ]
+          },
+          {
+            "uuid": "a9e9c666-37b7-468f-96df-d211c0e3424f",
+            "confidence-score": {
+              "STRVALUE": "0.99"
+            },
+            "relationship": "equal-to",
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "PCI-8.5.1"
+              }
+            ],
+            "targets": [
+              {
+                "type": "equal-to",
+                "id_ref": "PCI-8.5.1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
