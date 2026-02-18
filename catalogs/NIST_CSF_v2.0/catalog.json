@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "249be6ad-21c5-4386-a7c6-f5cb5c2289ad",
+    "uuid": "0f94117f-e0a8-4630-88c9-3366b07e917a",
     "metadata": {
       "title": "NIST Cybersecurity Framework (CSF) v2.0",
-      "last-modified": "2026-02-18T15:19:03.609064Z",
+      "last-modified": "2026-02-18T18:51:14.009798Z",
       "version": "2.0",
       "oscal-version": "1.2.0"
     },

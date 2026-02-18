@@ -185,7 +185,85 @@ data_rows = data_rows[column_names]
 final_df = pd.DataFrame([column_descriptions], columns=column_names)
 final_df = pd.concat([final_df, data_rows], ignore_index=True)
 
-# 7. Save to CSV
+# 7. Identify unmapped CSF controls and add them to CSV
+print("\n" + "="*80)
+print("UNMAPPED CSF CONTROLS ANALYSIS")
+print("="*80)
+
+# Load all CSF control IDs from the catalog
+source_catalog = 'catalogs/NIST_CSF_v2.0/catalog.json'
+print(f"\nLoading all CSF controls from {source_catalog}...")
+all_csf_controls = load_catalog_control_ids(source_catalog)
+print(f"Found {len(all_csf_controls)} total CSF controls in catalog")
+
+# Get the set of mapped CSF controls from our output
+mapped_csf_controls = set(grouped[source_col].values)
+print(f"Found {len(mapped_csf_controls)} CSF controls with mappings to 800-53")
+
+# Find unmapped controls
+unmapped_controls = all_csf_controls - mapped_csf_controls
+
+# Filter out category-level entries (e.g., "de", "gv.oc") - keep only actual controls
+# CSF controls have format like "gv.oc-01", categories are just "gv.oc" or "gv"
+filtered_unmapped = []
+for control in unmapped_controls:
+    # Must have a hyphen followed by digits to be a control (not a category)
+    if '-' in control and control.split('-')[-1].isdigit():
+        filtered_unmapped.append(control)
+
+print(f"\nFound {len(filtered_unmapped)} CSF controls NOT mapped to 800-53")
+
+if filtered_unmapped:
+    # Sort the unmapped controls for better readability
+    sorted_unmapped = sorted(filtered_unmapped)
+    
+    # Group by function/category for organized output
+    from collections import defaultdict
+    grouped_unmapped = defaultdict(list)
+    
+    for control in sorted_unmapped:
+        # Extract function.category (e.g., 'gv.oc' from 'gv.oc-01')
+        if '.' in control and '-' in control:
+            category = control.rsplit('-', 1)[0]  # Get everything before the last hyphen
+            grouped_unmapped[category].append(control)
+        else:
+            grouped_unmapped['other'].append(control)
+    
+    # Print grouped results
+    for category in sorted(grouped_unmapped.keys()):
+        controls = grouped_unmapped[category]
+        print(f"  {category.upper()}: ({len(controls)} controls)")
+    
+    # Add unmapped controls to the CSV with empty targets
+    # This allows csv-to-oscal-mc to populate source-gap-summary
+    unmapped_rows = pd.DataFrame({
+        '$$Source_Resource': ["catalogs/NIST_CSF_v2.0/catalog.json"] * len(sorted_unmapped),
+        '$$Target_Resource': ["catalogs/NIST_SP-800-53_rev5/catalog.json"] * len(sorted_unmapped),
+        '$$Map_Source_ID_Ref_list': sorted_unmapped,
+        '$$Map_Target_ID_Ref_list': [""] * len(sorted_unmapped),  # Empty target = unmapped
+        '$$Map_Relationship': [""] * len(sorted_unmapped),
+        '$Map_Confidence_Score': [""] * len(sorted_unmapped),
+        '$Map_Coverage': [""] * len(sorted_unmapped)
+    })
+    
+    # Append unmapped controls to the data
+    data_rows = pd.concat([data_rows, unmapped_rows], ignore_index=True)
+    print(f"\n✓ Added {len(sorted_unmapped)} unmapped controls to CSV")
+else:
+    print("\n✓ All CSF controls are mapped to 800-53!")
+
+print("="*80)
+
+# 8. Create the final output including the description row
+# Row 1: Column Names (handled by to_csv header)
+# Row 2: Column Descriptions
+final_df = pd.DataFrame([column_descriptions], columns=column_names)
+final_df = pd.concat([final_df, data_rows], ignore_index=True)
+
+# 9. Save to CSV
 final_df.to_csv(output_csv, index=False)
 
-print(f"Successfully converted {input_xlsx} to {output_csv}")
+print(f"\n✓ Successfully converted {input_xlsx} to {output_csv}")
+print(f"  - Mapped controls: {len(mapped_csf_controls)}")
+print(f"  - Unmapped controls: {len(unmapped_controls)}")
+print(f"  - Total rows in CSV: {len(data_rows)}")

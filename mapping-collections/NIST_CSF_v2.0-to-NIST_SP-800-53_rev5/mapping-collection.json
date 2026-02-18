@@ -1,9 +1,9 @@
 {
   "mapping-collection": {
-    "uuid": "14c1d2d1-5255-4d1c-bb49-33df872a26ed",
+    "uuid": "133be399-e659-4fcc-938a-5c9c4a7b9140",
     "metadata": {
       "title": "NIST_CSF_v2.0 to NIST_SP-800-53_rev5",
-      "last-modified": "2026-02-18T15:19:06+00:00",
+      "last-modified": "2026-02-18T18:51:16+00:00",
       "version": "1.0",
       "oscal-version": "1.2.0"
     },
@@ -15,7 +15,7 @@
     },
     "mappings": [
       {
-        "uuid": "5a9da150-681c-41ac-a30d-10fccb191e8e",
+        "uuid": "5f6f5975-5b29-454e-af87-667b7f99154d",
         "source-resource": {
           "type": "catalog",
           "href": "catalogs/NIST_CSF_v2.0/catalog.json"
@@ -26,7 +26,7 @@
         },
         "maps": [
           {
-            "uuid": "abf5e87d-b881-4505-8585-f2e72f565994",
+            "uuid": "1e703075-a7fb-4ca2-9a90-917b2b5064cc",
             "relationship": "superset-of",
             "sources": [
               {
@@ -57,7 +57,7 @@
             }
           },
           {
-            "uuid": "a94a6763-3bb8-4522-abde-0b1ec626b847",
+            "uuid": "04eefe04-e01b-492a-a57b-30fdd39b9382",
             "relationship": "superset-of",
             "sources": [
               {
@@ -100,7 +100,7 @@
             }
           },
           {
-            "uuid": "8d878dec-884a-497a-9d91-1440c6b05d43",
+            "uuid": "607a27d4-9f25-4bb2-999c-91342c87e086",
             "relationship": "superset-of",
             "sources": [
               {
@@ -135,7 +135,7 @@
             }
           },
           {
-            "uuid": "fbf657d8-435f-44b4-a7b2-2057331f2c43",
+            "uuid": "7c97d788-d1c8-4f21-8e32-f8717b0b0f33",
             "relationship": "superset-of",
             "sources": [
               {
@@ -170,7 +170,7 @@
             }
           },
           {
-            "uuid": "a88ff6d8-21ab-4f23-8965-4bb826ff72ec",
+            "uuid": "598df736-7bf5-44fc-80e0-68ca0540d3fb",
             "relationship": "superset-of",
             "sources": [
               {
@@ -197,7 +197,7 @@
             }
           },
           {
-            "uuid": "333e550e-2771-4727-b9bb-996cfc7b8f5c",
+            "uuid": "38b4b8ba-128f-403b-a95d-3e51c12d9b49",
             "relationship": "superset-of",
             "sources": [
               {
@@ -220,7 +220,7 @@
             }
           },
           {
-            "uuid": "ac0b3ae6-7b6d-4865-8a49-bd3a36533014",
+            "uuid": "77e31b5e-7db3-4485-b59a-ddfd972eb7f5",
             "relationship": "superset-of",
             "sources": [
               {
@@ -263,7 +263,7 @@
             }
           },
           {
-            "uuid": "833be654-448e-403e-944c-86b788811f2a",
+            "uuid": "c25e07e7-7eb6-4ae1-b364-9fc92162c8af",
             "relationship": "superset-of",
             "sources": [
               {
@@ -294,7 +294,7 @@
             }
           },
           {
-            "uuid": "1e94307e-891e-4be1-9129-462565e352f8",
+            "uuid": "2bffcfc8-b69d-4f6b-8bb9-1c181afa8cb3",
             "relationship": "superset-of",
             "sources": [
               {
@@ -333,7 +333,7 @@
             }
           },
           {
-            "uuid": "a7f25a1f-737e-4074-bf44-20958a5daf93",
+            "uuid": "7951973f-cfa8-4019-ae67-d8aa2405c899",
             "relationship": "superset-of",
             "sources": [
               {
@@ -368,7 +368,7 @@
             }
           },
           {
-            "uuid": "dfd0585d-d18f-4e15-ab23-7104d4efb3ec",
+            "uuid": "93c80c8f-6c26-46ab-b9bf-d21c46c36dee",
             "relationship": "superset-of",
             "sources": [
               {
@@ -431,7 +431,7 @@
             }
           },
           {
-            "uuid": "ccb037f6-74d6-475d-ba30-e08ac9ab2f03",
+            "uuid": "1049d89a-22d7-4ec7-b92f-7356caee2e48",
             "relationship": "superset-of",
             "sources": [
               {
@@ -450,7 +450,7 @@
             }
           },
           {
-            "uuid": "114e72d9-d521-472e-b6f3-5304c33020f0",
+            "uuid": "d6e82806-de30-4c2c-96f8-bdaf2ff4530e",
             "relationship": "superset-of",
             "sources": [
               {
@@ -493,7 +493,7 @@
             }
           },
           {
-            "uuid": "04b38f1d-c31f-48c9-9e70-1dc7460bb7d3",
+            "uuid": "c0c32b1f-cd9e-4ef9-8aa7-8df967289a1d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -592,7 +592,7 @@
             }
           },
           {
-            "uuid": "97f31b58-1463-49f4-9e90-8db3d3357a95",
+            "uuid": "e6da9a1a-131c-4e4b-a940-99445a2c0b0a",
             "relationship": "superset-of",
             "sources": [
               {
@@ -627,7 +627,7 @@
             }
           },
           {
-            "uuid": "ca6d4b31-9d62-44f8-9fca-d40d28ccdc30",
+            "uuid": "b99e39b1-0dfb-461f-8f0b-09409a51f344",
             "relationship": "superset-of",
             "sources": [
               {
@@ -662,7 +662,7 @@
             }
           },
           {
-            "uuid": "27c79747-6ac9-4a87-af5a-308ef560b7c5",
+            "uuid": "0129d917-441f-4613-8621-d5e1351ed610",
             "relationship": "superset-of",
             "sources": [
               {
@@ -781,7 +781,7 @@
             }
           },
           {
-            "uuid": "3a2dca03-b378-4bb8-ad90-e254a5772fc8",
+            "uuid": "ea15bfa4-33bc-43fa-a479-791e78e364ed",
             "relationship": "superset-of",
             "sources": [
               {
@@ -820,7 +820,7 @@
             }
           },
           {
-            "uuid": "0ab48fb4-ce85-4859-b2f5-5d1b2fd43235",
+            "uuid": "8ce13571-64a7-4e8e-be63-5d15c474af08",
             "relationship": "superset-of",
             "sources": [
               {
@@ -851,7 +851,7 @@
             }
           },
           {
-            "uuid": "dd801d5b-5e58-4b43-a32a-64930ba92c45",
+            "uuid": "23fc1a47-faef-43d9-9100-44e46e9f36ba",
             "relationship": "superset-of",
             "sources": [
               {
@@ -946,7 +946,7 @@
             }
           },
           {
-            "uuid": "d956328b-db4a-4179-9e79-b8a62f4022b6",
+            "uuid": "301589b7-6c1d-41e7-b465-32cd94063394",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1041,7 +1041,7 @@
             }
           },
           {
-            "uuid": "9c36a886-6fa2-4463-af60-c455fb3f9f11",
+            "uuid": "b1e07786-e29f-4e49-b9bc-2866e8138875",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1068,7 +1068,7 @@
             }
           },
           {
-            "uuid": "5c36cfc9-a481-4465-9a9a-53b1e00b5e04",
+            "uuid": "15f38e4e-91e7-411b-8c76-6ec25ac2b870",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1087,7 +1087,7 @@
             }
           },
           {
-            "uuid": "abc68b75-2166-4b83-8107-2ff77cd87ad5",
+            "uuid": "0d73b6b8-c71d-4f5e-97f0-58e8a26961e7",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1126,7 +1126,7 @@
             }
           },
           {
-            "uuid": "ef7242cf-4b27-4f4f-bac6-024d3268b339",
+            "uuid": "db536ee1-7da6-43ba-b71e-47d946fc0b44",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1157,7 +1157,7 @@
             }
           },
           {
-            "uuid": "2da52441-7307-4374-a4fb-91c188d29016",
+            "uuid": "264e7128-5224-4caa-a97b-7a69b2e715b7",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1180,7 +1180,7 @@
             }
           },
           {
-            "uuid": "0e15b412-6ba1-476f-affc-f928fa6b8c52",
+            "uuid": "918be775-d90b-49a9-87e3-5543cd5f5d44",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1215,7 +1215,7 @@
             }
           },
           {
-            "uuid": "82f8127e-9acb-40d8-a3ee-285e83d094c1",
+            "uuid": "3fb8f91e-38d1-47e1-b8ef-f3d271ad631a",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1250,7 +1250,7 @@
             }
           },
           {
-            "uuid": "4399241f-3ff8-4acf-a485-5ca3a1b8f646",
+            "uuid": "4d284473-626c-400c-b5b7-f147033692ff",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1285,7 +1285,7 @@
             }
           },
           {
-            "uuid": "e7df306c-97a9-41e1-b522-a683f4d8fee9",
+            "uuid": "2c9f06d2-a3fe-4bea-b2e1-48390de13cb2",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1324,7 +1324,7 @@
             }
           },
           {
-            "uuid": "5f94ab90-5839-44ba-84c2-e7724545a068",
+            "uuid": "43bdb9f3-3ff8-47a9-8d2c-5237ddf119df",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1343,7 +1343,7 @@
             }
           },
           {
-            "uuid": "26123993-594c-40c0-a059-d7e044057e91",
+            "uuid": "90a2673d-da53-40df-a2b7-3ad6aa90c6be",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1374,7 +1374,7 @@
             }
           },
           {
-            "uuid": "b4a2929a-4e89-4828-8fa4-c015b80f1d75",
+            "uuid": "f86b7a48-4006-420e-b6ce-bb7880b19e7e",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1401,7 +1401,7 @@
             }
           },
           {
-            "uuid": "e924b89f-5775-4dec-a096-635d5b512f51",
+            "uuid": "13fe0054-c3c5-4628-83c7-4864a4e7f36a",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1428,7 +1428,7 @@
             }
           },
           {
-            "uuid": "71d633d2-93e1-4910-84e1-f22f5e05050a",
+            "uuid": "97e63835-8632-4023-bf1d-8c42ba7ea50f",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1555,7 +1555,7 @@
             }
           },
           {
-            "uuid": "e4cf12ad-b139-4938-998e-f1146defa4b8",
+            "uuid": "90cd9671-7253-4e42-b1ca-794fd9ac6c50",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1582,7 +1582,7 @@
             }
           },
           {
-            "uuid": "c985e4dc-3d38-4150-a0c0-d98925fa8d65",
+            "uuid": "968f6e23-2bec-4cd6-a3a9-28d334721a71",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1621,7 +1621,7 @@
             }
           },
           {
-            "uuid": "37989052-89af-4eb0-a94b-b9a631a8ce26",
+            "uuid": "72efe002-fc0d-4e92-8a17-da82b65bcf79",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1652,7 +1652,7 @@
             }
           },
           {
-            "uuid": "4d415420-47f0-4f57-af0a-065bfac150b5",
+            "uuid": "65dde50c-045e-42d5-87ca-9dc22e6b8928",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1687,7 +1687,7 @@
             }
           },
           {
-            "uuid": "e626993e-b395-4318-a3b0-5eb1b2d2441d",
+            "uuid": "73a0f7df-b6a1-4a16-9a48-56ab066032dc",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1730,7 +1730,7 @@
             }
           },
           {
-            "uuid": "bda12768-a2b8-44b4-a291-f3e443aae4be",
+            "uuid": "0890e2c0-a60d-4a32-9774-f347d9cae392",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1797,7 +1797,7 @@
             }
           },
           {
-            "uuid": "ea628af8-6c47-4df8-8b15-8f8088a5fef0",
+            "uuid": "27709fe3-c7ca-4c57-922a-c73aa80a93e0",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1852,7 +1852,7 @@
             }
           },
           {
-            "uuid": "5e7f9fe5-14a3-49f0-8f03-2b0547e89e2c",
+            "uuid": "95c1373b-da22-404e-938a-a55505c99496",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1875,7 +1875,7 @@
             }
           },
           {
-            "uuid": "8eb4150b-b0d2-4ef1-b438-b8296386f6ae",
+            "uuid": "c4563d0f-b22c-4c17-bc77-6b66222cfc51",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1910,7 +1910,7 @@
             }
           },
           {
-            "uuid": "ca6d82c5-5078-4537-9d02-952342e44e5e",
+            "uuid": "7400e41a-23b0-42f4-a349-bc1f4df0527a",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1949,7 +1949,7 @@
             }
           },
           {
-            "uuid": "06223fcf-a7c1-4051-9dff-feb41ecdb70a",
+            "uuid": "08be669b-302f-4ff8-9383-ae65cab272ea",
             "relationship": "superset-of",
             "sources": [
               {
@@ -1976,7 +1976,7 @@
             }
           },
           {
-            "uuid": "90c40492-fdd1-4697-8661-3dd3b2262529",
+            "uuid": "e26c676e-3959-425b-b795-aa77ed339646",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2003,7 +2003,7 @@
             }
           },
           {
-            "uuid": "b0608cb2-39ba-4d6b-933e-f8fd0b3f541e",
+            "uuid": "b99ca463-8180-46c6-93be-357888b66b5c",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2030,7 +2030,7 @@
             }
           },
           {
-            "uuid": "418f2a48-e6a9-4933-a993-e79bca6e4523",
+            "uuid": "fa39f6e0-47c5-470e-9096-f136dd8c0798",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2105,7 +2105,7 @@
             }
           },
           {
-            "uuid": "65c48195-2a69-40b3-83e9-97d6823748ce",
+            "uuid": "872c5110-203c-496f-8d9d-77e615202c7f",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2268,7 +2268,7 @@
             }
           },
           {
-            "uuid": "b36cecb0-b85c-43d2-b8c6-ece377f62dda",
+            "uuid": "da3a2e98-7310-44ac-b829-8c3038339195",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2443,7 +2443,7 @@
             }
           },
           {
-            "uuid": "5fdb7a5b-6d80-49a7-9fdd-eb557c4c11cf",
+            "uuid": "98ef7211-e34a-428d-a8ff-aac033b4a316",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2614,7 +2614,7 @@
             }
           },
           {
-            "uuid": "619bb0f6-3604-4550-9a98-99eb00751fc5",
+            "uuid": "37942897-0c08-4d23-8910-bc0508282e2d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2645,7 +2645,7 @@
             }
           },
           {
-            "uuid": "bf8273b9-b0d2-4f78-9690-4b358f28a2e9",
+            "uuid": "bf7910b7-c32e-42de-a762-aae57237469b",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2700,7 +2700,7 @@
             }
           },
           {
-            "uuid": "91dd98a3-87d2-48f9-9a5b-52cb3cf3f1b5",
+            "uuid": "680094a4-0383-4596-94c7-7f7207e96809",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2727,7 +2727,7 @@
             }
           },
           {
-            "uuid": "ba7c1bad-a30c-4dd9-a890-9b937ad7cccd",
+            "uuid": "166d79c4-166c-4592-a6c6-43aa1b89f93d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2758,7 +2758,7 @@
             }
           },
           {
-            "uuid": "8b8f6e5b-b928-47b8-8463-872bbd55dd1a",
+            "uuid": "058f4d24-57d3-4dc5-94e2-577c761df621",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2797,7 +2797,7 @@
             }
           },
           {
-            "uuid": "0b2b610b-4478-4cae-bbd0-2cfa9bdc9aa4",
+            "uuid": "427c7766-cbc5-4b4b-9bba-f0652fbcb99b",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2828,7 +2828,7 @@
             }
           },
           {
-            "uuid": "a5c788b2-663c-4dc5-bb97-4bb8fea4fa31",
+            "uuid": "6530f16e-ea1c-4e62-83d1-7147ba5dbe71",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2859,7 +2859,7 @@
             }
           },
           {
-            "uuid": "8c3858bd-44e5-4fb9-bb1a-5d35b1a20e1c",
+            "uuid": "78dce0ba-0400-48b9-8fba-f3c7fcbbe9d6",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2886,7 +2886,7 @@
             }
           },
           {
-            "uuid": "b0eaf758-e279-4231-a27a-8662cc27a956",
+            "uuid": "49921bbf-6931-417c-a2ac-a25671deca26",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2905,7 +2905,7 @@
             }
           },
           {
-            "uuid": "3ba2114c-a0be-412b-91e7-68e433e110ab",
+            "uuid": "ea3c9e99-ae16-4311-9af9-e47b03c3dfac",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2964,7 +2964,7 @@
             }
           },
           {
-            "uuid": "75c1bb69-556e-4870-b4c8-29f95daa763a",
+            "uuid": "741e5d7e-1d58-47fb-9797-9ff17849d414",
             "relationship": "superset-of",
             "sources": [
               {
@@ -2983,7 +2983,7 @@
             }
           },
           {
-            "uuid": "e5b6690b-4f64-44d1-98e8-945be24c5a7e",
+            "uuid": "a74dc3eb-2e64-4918-ad74-db906a686b5c",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3054,7 +3054,7 @@
             }
           },
           {
-            "uuid": "e97e0c77-3aee-4897-8b42-f8f356801ae4",
+            "uuid": "15df48e2-a51d-4d3b-bf57-ba00293472d8",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3073,7 +3073,7 @@
             }
           },
           {
-            "uuid": "13a45924-ffc5-4552-8303-0950c95845f4",
+            "uuid": "7e11b70d-603c-4114-b8a7-c69a0908b1a3",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3128,7 +3128,7 @@
             }
           },
           {
-            "uuid": "aa14d269-469c-42f9-b3db-f3b658e1b520",
+            "uuid": "83822058-5f69-4d3c-a06f-e4c56b78ead3",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3147,7 +3147,7 @@
             }
           },
           {
-            "uuid": "408366a8-1526-46d2-8725-f08f3d90f5fb",
+            "uuid": "e4dcd8ed-4f32-497f-93ef-b7077f1d01ea",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3210,7 +3210,7 @@
             }
           },
           {
-            "uuid": "ad54efba-efc3-4a8b-a634-885eafd925f3",
+            "uuid": "96179687-ffa5-4b4f-bf37-0af3b6fba390",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3261,7 +3261,7 @@
             }
           },
           {
-            "uuid": "896865e5-4021-42a7-9a2a-3c5abc465bcf",
+            "uuid": "5eed4b4e-0994-4a5e-afe2-b589e4371dcb",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3284,7 +3284,7 @@
             }
           },
           {
-            "uuid": "b43aeed3-523d-48b9-9c20-3a6935d411e2",
+            "uuid": "27f339a1-cc4b-453f-aece-fbde9e2f9309",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3303,7 +3303,7 @@
             }
           },
           {
-            "uuid": "63c5fd00-e6b2-4846-9507-74ee6a351e84",
+            "uuid": "1cb9520c-9344-4c49-bce4-8d57b7b10015",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3374,7 +3374,7 @@
             }
           },
           {
-            "uuid": "c5ca1042-b2e4-4c01-8323-cc6a8b8cc503",
+            "uuid": "c093f4dc-f0f2-4042-a468-9f3fa164d632",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3445,7 +3445,7 @@
             }
           },
           {
-            "uuid": "6ec9179f-058c-409c-bf3f-4d5cedb8f0d2",
+            "uuid": "9bee01d0-c3c5-4acf-922b-22f50e16fccb",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3548,7 +3548,7 @@
             }
           },
           {
-            "uuid": "0a9e2f90-4e13-423c-a0af-125730b74adf",
+            "uuid": "f97a2f1c-f40c-4b98-8821-166e5abff8fb",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3571,7 +3571,7 @@
             }
           },
           {
-            "uuid": "1a5486ea-86fc-4810-a11c-0bf26c4ee0fb",
+            "uuid": "338b8df0-7f42-44ba-af5d-423c5902c97d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3606,7 +3606,7 @@
             }
           },
           {
-            "uuid": "00edb2a5-7033-4ada-8d91-b92ae414db01",
+            "uuid": "49d603e4-f0ee-43a6-b99d-ddd8c9d58cbe",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3661,7 +3661,7 @@
             }
           },
           {
-            "uuid": "a9bafc3a-9495-4056-a3bc-d19b9bf7673e",
+            "uuid": "33180391-9b2d-4b36-8d69-909e6e5a5f90",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3704,7 +3704,7 @@
             }
           },
           {
-            "uuid": "4e61ab19-cde2-4c54-a79a-75329b13b6e7",
+            "uuid": "f31dba8e-3a1f-4550-9cb7-ee93725becb3",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3739,7 +3739,7 @@
             }
           },
           {
-            "uuid": "91292459-c6b2-4105-9b33-0c2dbdcab6e7",
+            "uuid": "68c0cd68-7d8c-429e-966e-8964b9a73f80",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3798,7 +3798,7 @@
             }
           },
           {
-            "uuid": "3554c5ec-29d5-4bd4-addb-e669d4f9ad0c",
+            "uuid": "2b108e37-86be-4464-8acc-9ce06bf24f07",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3833,7 +3833,7 @@
             }
           },
           {
-            "uuid": "0ae23f7d-6dc2-4ece-be9c-98e3d68aa871",
+            "uuid": "74c6ff8f-1ff0-4064-b431-937e59cd21fe",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3872,7 +3872,7 @@
             }
           },
           {
-            "uuid": "e0c728b7-a020-4ab4-8afb-4f4bc2097258",
+            "uuid": "fc7b3ee1-8b2f-47b7-8267-1fea23a28f27",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3915,7 +3915,7 @@
             }
           },
           {
-            "uuid": "595a1aec-b32d-4150-9818-376ffe64c7aa",
+            "uuid": "3717a353-32a3-43ad-b59b-2af7dfa85117",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3946,7 +3946,7 @@
             }
           },
           {
-            "uuid": "53f6a1d6-dee0-46d5-b781-f1d7d825a405",
+            "uuid": "8719533b-3cd1-4abf-ab20-8ae971ad3501",
             "relationship": "superset-of",
             "sources": [
               {
@@ -3993,7 +3993,7 @@
             }
           },
           {
-            "uuid": "b098e18f-9727-4909-b594-ec4e6344f5e3",
+            "uuid": "9c9b407d-557b-4a3b-acb2-551f95a7bf4c",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4020,7 +4020,7 @@
             }
           },
           {
-            "uuid": "7bab1a94-5a1d-4211-8c0b-69e5c8e3b7a1",
+            "uuid": "40f900c0-8f56-4dae-bf4c-4d28a0a695b4",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4043,7 +4043,7 @@
             }
           },
           {
-            "uuid": "335f4d31-d4d2-4f2c-972f-633d1d1c92aa",
+            "uuid": "aba0aec0-dc98-445d-8638-25f4e6644404",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4070,7 +4070,7 @@
             }
           },
           {
-            "uuid": "f72e0d3b-5fc4-4f91-867e-6a8fe0bb5875",
+            "uuid": "6cf2d09b-7a6e-49f0-8f9a-99a18b2ccf7d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4097,7 +4097,7 @@
             }
           },
           {
-            "uuid": "d9c07905-2dc1-4d92-9598-5a14b7d23317",
+            "uuid": "dbe6adb5-e0dc-43cb-b5e9-9bcfabd6b36b",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4124,7 +4124,7 @@
             }
           },
           {
-            "uuid": "867d10cf-c7ba-4e54-a193-0abc7ef9b5bf",
+            "uuid": "3bd47059-6fa9-4c0f-8d4a-1da40474716f",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4159,7 +4159,7 @@
             }
           },
           {
-            "uuid": "7b15b421-76ea-40d3-919a-6d952857d424",
+            "uuid": "e74fc9f3-bd67-42a4-89ac-24f3fb53e931",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4178,7 +4178,7 @@
             }
           },
           {
-            "uuid": "c55aa5f8-8012-4598-8818-1a81c7fdcb1d",
+            "uuid": "b93954e3-d689-43bc-ba94-f65289193e29",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4201,7 +4201,7 @@
             }
           },
           {
-            "uuid": "35ce91a3-a847-4613-b657-7d30415c1834",
+            "uuid": "441d79bb-cb9f-45a9-9a22-bcc60ce0a60d",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4228,7 +4228,7 @@
             }
           },
           {
-            "uuid": "94b84108-217a-4e50-a4a8-786cdbe60d58",
+            "uuid": "8c279e3b-1d1b-4324-9df3-272b45793ef4",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4255,7 +4255,7 @@
             }
           },
           {
-            "uuid": "1892f558-9617-4029-9100-baf021d01f98",
+            "uuid": "530d7d17-6ba5-4ca0-ba6e-103a7cf96c96",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4282,7 +4282,7 @@
             }
           },
           {
-            "uuid": "5d2a196b-c62f-4cf5-adae-9fc6200a1ed0",
+            "uuid": "35b923ef-d77b-4ab3-a052-ac698036cff8",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4313,7 +4313,7 @@
             }
           },
           {
-            "uuid": "5dae5262-ef74-4ecf-b345-19d79eb1f21b",
+            "uuid": "227c9d95-d8ef-498a-ac5e-ec24317e6d6b",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4348,7 +4348,7 @@
             }
           },
           {
-            "uuid": "bc4fe0c8-bad9-4488-95a3-fd8088e6e236",
+            "uuid": "e9652326-4441-4a72-a915-ff7fd45b3ca4",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4383,7 +4383,7 @@
             }
           },
           {
-            "uuid": "edcf4deb-bca9-447a-baf6-c49c66b634e9",
+            "uuid": "c79543a0-7764-4ff4-9642-c06058eadf73",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4418,7 +4418,7 @@
             }
           },
           {
-            "uuid": "e4374977-d698-4dc4-8fdf-e38a70ba7628",
+            "uuid": "c4598b7e-a535-4d44-9f4f-ce6391c81dd5",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4445,7 +4445,7 @@
             }
           },
           {
-            "uuid": "304339e2-9270-43af-8f9e-314b678f25a0",
+            "uuid": "a916df88-0fd4-4d45-b16d-fcd92b214c65",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4472,7 +4472,7 @@
             }
           },
           {
-            "uuid": "e3ee5196-be6a-4bb3-a49c-c168d4c27d9b",
+            "uuid": "c7060f19-1703-4abf-9d78-90662f7f3645",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4503,7 +4503,7 @@
             }
           },
           {
-            "uuid": "6d987a11-02be-44d3-b0e1-ce25d9a686fb",
+            "uuid": "8aa7cfa9-203c-4888-bea7-dd72a6a08185",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4526,7 +4526,7 @@
             }
           },
           {
-            "uuid": "80efb376-a31d-4271-a25a-07fa0a0b10e4",
+            "uuid": "00978ada-3574-4ec4-ae72-49f54d864ec4",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4545,7 +4545,7 @@
             }
           },
           {
-            "uuid": "3ba43d96-a01f-4f84-ae95-786de649b239",
+            "uuid": "994e22a2-5730-49e7-84a1-784170f3d50f",
             "relationship": "superset-of",
             "sources": [
               {
@@ -4563,7 +4563,95 @@
               "percentage": 1.0
             }
           }
-        ]
+        ],
+        "source-gap-summary": {
+          "uuid": "c06cac91-ba64-4f67-9d7d-bd65bb4c4abd",
+          "unmapped-controls": [
+            {
+              "with-ids": [
+                "de.ae-01",
+                "de.ae-05",
+                "de.cm-04",
+                "de.cm-05",
+                "de.cm-07",
+                "de.cm-08",
+                "de.dp-01",
+                "de.dp-02",
+                "de.dp-03",
+                "de.dp-04",
+                "de.dp-05",
+                "id.am-06",
+                "id.be-01",
+                "id.be-02",
+                "id.be-03",
+                "id.be-04",
+                "id.be-05",
+                "id.gv-01",
+                "id.gv-02",
+                "id.gv-03",
+                "id.gv-04",
+                "id.rm-01",
+                "id.rm-02",
+                "id.rm-03",
+                "id.sc-01",
+                "id.sc-02",
+                "id.sc-03",
+                "id.sc-04",
+                "id.sc-05",
+                "pr.ac-01",
+                "pr.ac-02",
+                "pr.ac-03",
+                "pr.ac-04",
+                "pr.ac-05",
+                "pr.ac-06",
+                "pr.ac-07",
+                "pr.at-03",
+                "pr.at-04",
+                "pr.at-05",
+                "pr.ds-03",
+                "pr.ds-04",
+                "pr.ds-05",
+                "pr.ds-06",
+                "pr.ds-07",
+                "pr.ds-08",
+                "pr.ip-01",
+                "pr.ip-02",
+                "pr.ip-03",
+                "pr.ip-04",
+                "pr.ip-05",
+                "pr.ip-06",
+                "pr.ip-07",
+                "pr.ip-08",
+                "pr.ip-09",
+                "pr.ip-10",
+                "pr.ip-11",
+                "pr.ip-12",
+                "pr.ma-01",
+                "pr.ma-02",
+                "pr.pt-01",
+                "pr.pt-02",
+                "pr.pt-03",
+                "pr.pt-04",
+                "pr.pt-05",
+                "rc.co-01",
+                "rc.co-02",
+                "rc.im-01",
+                "rc.im-02",
+                "rs.an-01",
+                "rs.an-02",
+                "rs.an-04",
+                "rs.an-05",
+                "rs.co-01",
+                "rs.co-04",
+                "rs.co-05",
+                "rs.im-01",
+                "rs.im-02",
+                "rs.mi-03",
+                "rs.rp-01"
+              ]
+            }
+          ]
+        }
       }
     ]
   }
