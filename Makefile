@@ -10,15 +10,28 @@ BIN      := $(VENV)/bin
 PYTHON   := $(BIN)/python3
 
 # Variables - CSF Catalog Generation
-SCRIPT     := python/cyber_catalog.py
-DATA       := data/csf2.xlsx
-OUTPUT_DIR := catalogs/NIST_CSF_v2.0
+CSF_CATALOG_SCRIPT  := python/cyber_catalog.py
+CSF_MAPPING_SCRIPT  := python/cyber_mapping.py
+CSF_DATA            := data/csf2.xlsx
+CSF_OUTPUT_DIR      := catalogs/NIST_CSF_v2.0
+CSF_CSV             := content/csf2_to_800-53_crosswalk.csv
+CSF_MC_CONFIG       := content/csf2-mc.config
 
-.PHONY: all setup clone develop validate trestle-transform generate-csf-catalog generate-csf-mapping clean
+# Variables - NIST Mapping Generation
+NIST_MAPPING_SCRIPT := python/nist_mapping.py
+NIST_DATA           := data/sp800-53r4-to-r5-comparison-workbook.xlsx
+NIST_CSV            := content/nist_rev5_to_nist_rev4_crosswalk.csv
 
-all: setup clone develop generate-csf-catalog generate-csf-mapping trestle-transform validate
+.PHONY: all setup clone develop validate clean
+.PHONY: csf csf-catalog csf-csv csf-json
+.PHONY: nist nist-csv nist-json
 
-# 1. Unified Environment Setup
+all: setup clone develop csf nist
+
+# ============================================================================
+# COMMON: Environment Setup and Trestle Tooling
+# ============================================================================
+
 setup:
 	@if [ ! -d "$(VENV)" ]; then \
 		echo "==> Creating virtual environment..."; \
@@ -29,9 +42,9 @@ setup:
 	else \
 		echo "==> Virtual environment already exists at $(VENV)"; \
 	fi
-	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(CSF_OUTPUT_DIR)
+	@mkdir -p content
 
-# 2. Trestle Tooling Targets
 clone:
 	@if [ ! -d "$(SRC_DIR)" ]; then \
 		echo "==> Cloning branch $(BRANCH)..."; \
@@ -56,25 +69,41 @@ validate:
 	fi
 	$(BIN)/trestle validate -a
 
-# 3. Specific Transformation Targets
-trestle-transform: validate
-	@echo "==> Running CSV to OSCAL conversion via Trestle..."
-	$(BIN)/trestle task csv-to-oscal-mc -c content/csf2-mc.config
-
-# LABEL: Generate CSF Catalog
-# This target runs your custom transformation script
-generate-csf-catalog: setup
-	@echo "==> Running custom CSF transformation: $(SCRIPT)..."
-	$(PYTHON) $(SCRIPT)
-
-# LABEL: Generate CSF to 800-53 Mapping
-# This target generates a CSV mapping from CSF to NIST 800-53
-generate-csf-mapping: setup
-	@echo "==> Running CSF to 800-53 mapping transformation..."
-	$(PYTHON) python/cyber_mapping.py
-
-# 4. Clean up
 clean:
 	@echo "==> Cleaning up environment and source..."
 	rm -rf $(VENV) $(SRC_DIR)
 	find . -type d -name "__pycache__" -delete
+
+# ============================================================================
+# CSF: Cybersecurity Framework Catalog and Mapping
+# ============================================================================
+
+csf: csf-catalog csf-csv csf-json
+	@echo "==> CSF workflow complete: catalog, CSV, and JSON generated"
+
+csf-catalog: setup
+	@echo "==> Generating CSF catalog from Excel..."
+	$(PYTHON) $(CSF_CATALOG_SCRIPT)
+
+csf-csv: setup
+	@echo "==> Generating CSF to 800-53 mapping CSV..."
+	$(PYTHON) $(CSF_MAPPING_SCRIPT)
+
+csf-json: csf-csv develop
+	@echo "==> Converting CSF CSV to OSCAL JSON mapping collection..."
+	$(BIN)/trestle task csv-to-oscal-mc -c $(CSF_MC_CONFIG)
+
+# ============================================================================
+# NIST: NIST SP 800-53 Rev 5 to Rev 4 Crosswalk
+# ============================================================================
+
+nist: nist-csv nist-json
+	@echo "==> NIST workflow complete: relationships Excel, summary.md, CSV, and JSON generated"
+
+nist-csv: setup
+	@echo "==> Generating NIST Rev 5 to Rev 4 relationships, summary, and CSV..."
+	$(PYTHON) $(NIST_MAPPING_SCRIPT)
+
+nist-json: nist-csv develop
+	@echo "==> Converting NIST CSV to OSCAL JSON mapping collection..."
+	$(BIN)/trestle task csv-to-oscal-mc -c content/nist-mc.config
