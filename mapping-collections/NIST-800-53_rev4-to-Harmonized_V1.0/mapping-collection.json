@@ -3,16 +3,16 @@
     "uuid": "a0000000-0000-4000-8000-000000000050",
     "metadata": {
       "title": "Mapping from NIST 800-53 rev4 to Harmonized Profile V1.0",
-      "last-modified": "2025-04-14T00:00:00.000+00:00",
+      "last-modified": "2026-03-03T00:00:00.000+00:00",
       "version": "1.0.0",
-      "oscal-version": "1.1.2"
+      "oscal-version": "1.2.0"
     },
     "provenance": {
-      "method": "semi-automated",
+      "method": "manual",
       "matching-rationale": "semantic",
       "status": "draft",
       "confidence-score": {
-        "STRVALUE": "0.90"
+        "percentage": 0.99
       },
       "mapping-description": "This contains semantic mappings from NIST 800-53 v4 to Harmonized Profile V1.0."
     },
@@ -32,7 +32,7 @@
             "uuid": "9d06c3a4-8e87-44d2-bd24-580687c59a21",
             "matching-rationale": "functional",
             "confidence-score": {
-              "STRVALUE": "0.95"
+              "percentage": 1.0
             },
             "relationship": "equal-to",
             "sources": [
@@ -51,7 +51,7 @@
           {
             "uuid": "e2a1943f-c0ae-4d39-ab58-41fcee000960",
             "confidence-score": {
-              "STRVALUE": "0.99"
+              "percentage": 0.99
             },
             "relationship": "equal-to",
             "sources": [
