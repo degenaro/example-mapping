@@ -31,9 +31,6 @@
           {
             "uuid": "9d06c3a4-8e87-44d2-bd24-580687c59a21",
             "matching-rationale": "functional",
-            "confidence-score": {
-              "percentage": 1.0
-            },
             "relationship": "equal-to",
             "sources": [
               {
@@ -46,13 +43,13 @@
                 "type": "control",
                 "id_ref": "ac-1"
               }
-            ]
+            ],
+            "confidence-score": {
+              "percentage": 1.0
+            }
           },
           {
             "uuid": "e2a1943f-c0ae-4d39-ab58-41fcee000960",
-            "confidence-score": {
-              "percentage": 0.99
-            },
             "relationship": "equal-to",
             "sources": [
               {
@@ -65,7 +62,10 @@
                 "type": "control",
                 "id_ref": "ac-2"
               }
-            ]
+            ],
+            "confidence-score": {
+              "percentage": 0.99
+            }
           }
         ]
       }
