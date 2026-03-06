@@ -3,7 +3,7 @@ ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # Variables - Trestle Tooling
 REPO_URL := https://github.com/oscal-compass/compliance-trestle.git
-BRANCH   := v4.mapping.bob
+BRANCH   := v4
 SRC_DIR  := /tmp/compliance-trestle_src
 VENV     := $(ROOT_DIR)/.venv
 BIN      := $(VENV)/bin
