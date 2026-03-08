@@ -85,6 +85,9 @@
             ],
             "confidence-score": {
               "percentage": 1.0
+            },
+            "coverage": {
+              "target-coverage": 1.0
             }
           },
           {
@@ -104,6 +107,9 @@
             ],
             "confidence-score": {
               "percentage": 1.0
+            },
+            "coverage": {
+              "target-coverage": 1.0
             }
           }
         ]
