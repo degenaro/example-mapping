@@ -2,12 +2,10 @@
 ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # Variables - Trestle Tooling
-REPO_URL := https://github.com/oscal-compass/compliance-trestle.git
-BRANCH   := v4
-SRC_DIR  := /tmp/compliance-trestle_src
 VENV     := $(ROOT_DIR)/.venv
 BIN      := $(VENV)/bin
 PYTHON   := $(BIN)/python3
+TRESTLE  := $(BIN)/trestle
 
 # Variables - CSF Catalog Generation
 CSF_CATALOG_SCRIPT  := python/cyber_catalog.py
@@ -22,56 +20,51 @@ NIST_MAPPING_SCRIPT := python/nist_mapping.py
 NIST_DATA           := data/sp800-53r4-to-r5-comparison-workbook.xlsx
 NIST_CSV            := content/nist_rev5_to_nist_rev4_crosswalk.csv
 
-.PHONY: all setup clone develop validate clean
+.PHONY: all venv setup install-trestle validate clean
 .PHONY: csf csf-catalog csf-csv csf-json
 .PHONY: nist nist-csv nist-json
 
-all: setup clone develop csf nist
+all: setup csf nist
 
 # ============================================================================
 # COMMON: Environment Setup and Trestle Tooling
 # ============================================================================
 
-setup:
+venv:
 	@if [ ! -d "$(VENV)" ]; then \
 		echo "==> Creating virtual environment..."; \
 		python3 -m venv $(VENV); \
 		$(BIN)/pip install --upgrade pip setuptools wheel; \
 		$(BIN)/pip install pandas openpyxl; \
-		echo "==> Venv initialized with pandas, openpyxl, and trestle base requirements."; \
+		echo "==> Venv initialized with pandas and openpyxl."; \
 	else \
 		echo "==> Virtual environment already exists at $(VENV)"; \
 	fi
-	@mkdir -p $(CSF_OUTPUT_DIR)
-	@mkdir -p content
 
-clone:
-	@if [ ! -d "$(SRC_DIR)" ]; then \
-		echo "==> Cloning branch $(BRANCH)..."; \
-		git clone --branch $(BRANCH) $(REPO_URL) $(SRC_DIR); \
-	fi
-
-develop: setup
-	@if [ ! -f "$(BIN)/trestle" ]; then \
-		echo "==> Installing trestle from source..."; \
-		$(BIN)/pip install -e $(SRC_DIR); \
-		echo "==> Running internal development setup..."; \
-		cd $(SRC_DIR) && PATH="$(BIN):$(PATH)" $(MAKE) develop; \
+install-trestle: venv
+	@if [ ! -f "$(TRESTLE)" ]; then \
+		echo "==> Installing compliance-trestle from PyPI..."; \
+		$(BIN)/pip install compliance-trestle; \
+		echo "==> Trestle installed successfully"; \
 	else \
 		echo "==> Trestle already installed in virtual environment"; \
 	fi
 
+setup: install-trestle
+	@mkdir -p $(CSF_OUTPUT_DIR)
+	@mkdir -p content
+
 validate:
 	@echo "==> Validating Trestle workspace at $(ROOT_DIR)..."
-	@if [ ! -f "$(BIN)/trestle" ]; then \
-		echo "Error: trestle binary not found. Run 'make develop'."; \
+	@if [ ! -f "$(TRESTLE)" ]; then \
+		echo "Error: trestle binary not found. Run 'make install-trestle'."; \
 		exit 1; \
 	fi
-	$(BIN)/trestle validate -a
+	$(TRESTLE) validate -a
 
 clean:
-	@echo "==> Cleaning up environment and source..."
-	rm -rf $(VENV) $(SRC_DIR)
+	@echo "==> Cleaning up environment..."
+	rm -rf $(VENV)
 	find . -type d -name "__pycache__" -delete
 
 # ============================================================================
@@ -89,9 +82,9 @@ csf-csv: setup
 	@echo "==> Generating CSF to 800-53 mapping CSV..."
 	$(PYTHON) $(CSF_MAPPING_SCRIPT)
 
-csf-json: csf-csv develop
+csf-json: csf-csv install-trestle
 	@echo "==> Converting CSF CSV to OSCAL JSON mapping collection..."
-	$(BIN)/trestle task csv-to-oscal-mc -c $(CSF_MC_CONFIG)
+	$(TRESTLE) task csv-to-oscal-mc -c $(CSF_MC_CONFIG)
 
 # ============================================================================
 # NIST: NIST SP 800-53 Rev 5 to Rev 4 Crosswalk
@@ -104,6 +97,6 @@ nist-csv: setup
 	@echo "==> Generating NIST Rev 5 to Rev 4 relationships, summary, and CSV..."
 	$(PYTHON) $(NIST_MAPPING_SCRIPT)
 
-nist-json: nist-csv develop
+nist-json: nist-csv install-trestle
 	@echo "==> Converting NIST CSV to OSCAL JSON mapping collection..."
-	$(BIN)/trestle task csv-to-oscal-mc -c content/nist-mc.config
+	$(TRESTLE) task csv-to-oscal-mc -c content/nist-mc.config
